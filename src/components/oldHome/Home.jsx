@@ -9,7 +9,7 @@ const Home = () => {
   const [isError, setIsError] = useState(false);
   const [user, setUser] = useState({});
 
-  useEffect(() => {
+useEffect(() => {
     const getPlatform = () => {
       const userAgent = window.navigator.userAgent;
       if (userAgent.match(/Windows/i)) return "Windows";
